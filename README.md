@@ -1,12 +1,12 @@
 # FIFA 21 DATA CLEANING USING MS EXCEL
 ![image](https://user-images.githubusercontent.com/63916057/225592439-fcbaee5a-3a27-4073-84b8-05b8e1497e9e.png)
 
-Data cleaning ensures integrity and obtaining accurate results
+Dirty data is data that's incomplete, incorrect, or irrelevant to the problem you're trying to solve
 
 
 ## INTRODUCTION
 
-Data cleaning is very important for effective analysis. It is one thing every data analyst should do and do properly before carrying out analysis otherwise it can cause serious problems. Before cleaning data, it is important to look out for some of the following that wo uld like make a data dirty, these includes spelling and other texts errors, inconsistent labels, formats and field lane, missing data and duplicates.
+Data cleaning is very important for effective analysis. It is one thing every data analyst should do and do properly before carrying out analysis otherwise it can cause serious problems. Before cleaning data, it is important to look out for some of the following that would likely make a data dirty, these includes spelling and other texts errors, inconsistent labels, formats and field lane, missing data and duplicates.
 
 Here a documentation of the cleaning process for FIFA '21 dataset is being presented. This dataset was provided as part of a challenge #Datacleaningchallenge launched on twitter by data ethusiasts to test the abilities of newbies, intermediate and advanced Data analyst for a large messy dataset.
 
