@@ -25,7 +25,7 @@ Before I began the cleaning process after loading the dataset, the following col
 
 | Before | After |
 | --- | --- |
-| ![Identified dirtydata](https://user-images.githubusercontent.com/63916057/225563068-c0f84644-07e9-45d3-97bc-812b476e62bd.JPG) | yes |
+| ![Identified dirtydata](https://user-images.githubusercontent.com/63916057/225563068-c0f84644-07e9-45d3-97bc-812b476e62bd.JPG) | ![CLEANED DATA](https://user-images.githubusercontent.com/63916057/225594824-ed5e6c19-058a-4aa2-bd94-cdf73ef3b1dc.JPG) |
 | Identified dirty data | Cleaned Data  |
 
 > Note: Some columns were hidden for screenshot purpose so as to capture those worked on for display in this documentation.
@@ -101,5 +101,21 @@ Here I filtered all blanks and replaced them with zeros. And then applied the =T
 | --- | --- |
 | ![Hits](https://user-images.githubusercontent.com/63916057/225588026-58d3bb1d-6718-4e5c-a862-c0b0a68d7a87.JPG) | ![Hits cleaned](https://user-images.githubusercontent.com/63916057/225588227-6b9d95d0-262f-4b20-9aa1-956d1a299bbc.JPG) |
 
+##  Summary / Techniques Used
+#### Methods used:
+-   IF
+-   LEN
+-   TRIM
+-   LEFT,RIGHT
+-   CLEAN
+-   Filters
+-   Find and replace
+-   Copy-Paste Values
+-   ROUND
+-   &
+-   Text to Columns
 
+## Conclusion
+As a means of wrapping up the project, Data validation was done to verify that the data is accurate, complete, and consistent and free from bias. This #DataCleaningchallenge has served as a great learning curve for me as I look to further improve of my data analytics skillsets.
+Advancing my analytical skills is a never ending journey hence i'm open to suggestions , recommendations and improvement.
 
