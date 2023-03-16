@@ -67,6 +67,9 @@ From the provided data dictionary for the challenge, we were required to present
 ### BOV
 Same requirement as the OVA and POT. I also applied the same process as shown for OVA above to achieve my results for it.
 
+| Before | After |
+| --- | --- |
+| ![BOV](https://user-images.githubusercontent.com/63916057/225582739-cf315210-d2e7-4325-b158-3d620076f800.JPG) | !![BOV cleaned](https://user-images.githubusercontent.com/63916057/225582782-396f85c6-2a80-4272-aad1-3bf92c0bffa7.JPG) |
 
 ### Loan Date End
 Here I filtered all blanks and replaced them with “not specified” values since none were specified for such players.
@@ -74,11 +77,23 @@ Here I filtered all blanks and replaced them with “not specified” values sin
 ### Value, Wage and Release Clause
 The provided data dictionary for the challenge required us to present each of these column in dollars which was originally valued in euros and also to convert values having “K”and “M” representing thousand and million to their respective digits. First in getting rid of all the Euros symbol, I used the find and replace feature. Thereafter, I  applied the formula [ =IF(RIGHT(W2)="M",LEFT(W2,LEN(W2)-1)*10^6, IF(RIGHT(W2)="K",LEFT(W2,LEN(W2)-1)*10^3,W2))*1.183 ] to convert the K’s and M’s into their respective digits. My final conversion for each of the three columns used the average Euro to dollar exchange rates as at 2021 because our dataset was on 2021 rates.
 
-### Weak foot rating, SM rating and Injury rating
-Similar approach was adopted for all three columns. I used the formular [ =VALUE(TRIM(REPLACE(LEFT(BO3),1,0," "))) ]  to get rid of the star symbols in each of these column and formatted to the appropriate data type.
+| Before | After |
+| --- | --- |
+| ![value, wage, release clause](https://user-images.githubusercontent.com/63916057/225583004-90f33282-c25b-48aa-9445-ed2f1835bace.JPG) | ![Value cleaned](https://user-images.githubusercontent.com/63916057/225583074-b0513ac9-51e4-4360-85b0-c1d0a31d5b4d.JPG) |
+
+### W/F, SM rating and IR
+Similar approach was adopted for all three columns. I used the formular [ =VALUE(TRIM(REPLACE(LEFT(BO3),1,0," "))) ]  to get rid of the star symbols in each of these column,renamed the column attribute to something readable and then formatted to the appropriate data type.
+
+| Before | After |
+| --- | --- |
+| ![ir](https://user-images.githubusercontent.com/63916057/225587850-aaa8b995-c4fd-43d7-8432-764bc2fc9966.JPG) | ![cleaned WF SM IR](https://user-images.githubusercontent.com/63916057/225587704-f4b018d3-0b1d-434e-a764-bc49b08f155d.JPG) |
 
 ### Hits
 Here I filtered all blanks and replaced them with zeros. And then applied the =TRIM(IF(RIGHT(CB2)="k",LEFT(CB2,LEN(CB2)-1)*10^3,CB2)) formula. Also the number data type didn’t had any effect when I tried changing it until I applied the value function which converts a text string that represents a number into a number.
+
+| Before | After |
+| --- | --- |
+| ![Hits](https://user-images.githubusercontent.com/63916057/225588026-58d3bb1d-6718-4e5c-a862-c0b0a68d7a87.JPG) | ![Hits cleaned](https://user-images.githubusercontent.com/63916057/225588227-6b9d95d0-262f-4b20-9aa1-956d1a299bbc.JPG) |
 
 
 
