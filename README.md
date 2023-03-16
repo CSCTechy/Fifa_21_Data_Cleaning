@@ -99,7 +99,7 @@ Here I filtered all blanks and replaced them with zeros. And then applied the =T
 
 | Before | After |
 | --- | --- |
-| ![Hits](https://user-images.githubusercontent.com/63916057/225588026-58d3bb1d-6718-4e5c-a862-c0b0a68d7a87.JPG) | ![Hits cleaned](https://user-images.githubusercontent.com/63916057/225588227-6b9d95d0-262f-4b20-9aa1-956d1a299bbc.JPG) |
+| ![Hits](https://user-images.githubusercontent.com/63916057/225588026-58d3bb1d-6718-4e5c-a862-c0b0a68d7a87.JPG) | ![Hits cleaned](https://user-images.githubusercontent.com/63916057/225588227-6b9d95d0-262f-4b20-9aa1-956d1a299bbc.JPG) | 
 
 ##  Summary / Techniques Used
 #### Methods used:
