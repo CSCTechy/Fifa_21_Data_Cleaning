@@ -122,5 +122,5 @@ Here I filtered all blanks and replaced them with zeros. And then applied the =T
 
 ## Conclusion
 As a means of wrapping up the project, Data validation was done to verify that the data is accurate, complete, and consistent and free from bias. This #DataCleaningchallenge has served as a great learning curve for me as I look to further improve of my data analytics skillsets.
-Advancing my analytical skills is a never ending journey hence i'm open to suggestions , recommendations and improvement.
+Advancing my analytical skills is a never ending journey hence i'm open to suggestions , recommendations and improvement 👍.
 
