@@ -103,16 +103,21 @@ Here I filtered all blanks and replaced them with zeros. And then applied the =T
 
 ##  Summary / Techniques Used
 #### Methods used:
+-   &
 -   IF
 -   LEN
+-   INT
+-   MOD
 -   TRIM
--   LEFT,RIGHT
 -   CLEAN
+-   VALUE
+-   ROUND
+-   REPLACE
+-   IFERROR
+-   LEFT,RIGHT
 -   Filters
 -   Find and replace
 -   Copy-Paste Values
--   ROUND
--   &
 -   Text to Columns
 
 ## Conclusion
