@@ -21,6 +21,10 @@ The goal of the data cleaning project on the fifa '21 dataset is to ensure the d
 
 Before I began the cleaning process after loading the dataset, the following columns were marked for cleaning; Longname ,Nationality , OVA , POT , Club , Contract , Height , Weight , BOV , Loan End date , Value, wage , release clause , W/F , SM , IR , and Hits.
 
+
+ ![Identified dirtydata](https://user-images.githubusercontent.com/63916057/225563068-c0f84644-07e9-45d3-97bc-812b476e62bd.JPG)                                                  
+| ------------------------------------------------------------------------------------------------------------------  |
+> ######                                             Identified dirty data
 ### LongName
 Cleaning this, I used the filter to look through the names and having identified some names were abbreviated here, I filtered those names and ensured they were fully spelt. Then I inserted an column to the right and applied the TRIM() function to remove any leading whitepace available in the name column that might cause issues later on and then copied and paste as values to get rid of the function.
 
