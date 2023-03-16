@@ -21,12 +21,15 @@ The goal of the data cleaning project on the fifa '21 dataset is to ensure the d
 
 Before I began the cleaning process after loading the dataset, the following columns were marked for cleaning; Longname ,Nationality , OVA , POT , Club , Contract , Height , Weight , BOV , Loan End date , Value, wage , release clause , W/F , SM , IR , and Hits.
 
+| Before | After |
+| --- | --- |
+| ![Identified dirtydata](https://user-images.githubusercontent.com/63916057/225563068-c0f84644-07e9-45d3-97bc-812b476e62bd.JPG) | yes |
+                                                   
 
- ![Identified dirtydata](https://user-images.githubusercontent.com/63916057/225563068-c0f84644-07e9-45d3-97bc-812b476e62bd.JPG)                                                  
-| ------------------------------------------------------------------------------------------------------------------  |
 ######                                             Identified dirty data
 ### LongName
 Cleaning this, I used the filter to look through the names and having identified some names were abbreviated here, I filtered those names and ensured they were fully spelt. Then I inserted an column to the right and applied the TRIM() function to remove any leading whitepace available in the name column that might cause issues later on and then copied and paste as values to get rid of the function.
+
 
 ### Nationality
 Here there wasn’t much to clean but all I did was to apply the TRIM function just to get rid of any whitespace that might possibly exist in any of the rows.
@@ -34,6 +37,9 @@ Here there wasn’t much to clean but all I did was to apply the TRIM function j
 ### OVA
 From the provided data dictionary for the challenge, we were required to format the data type of this column as percentage. In achieving this, I inserted a new column to the right and typed 100 into the first cell and copied it, after which I moved to the original column, highlighted all the rows using Ctrl + Shift + Down-arrow, the right clicked to paste special and clicked divide. After doing so I finally changed the datatype to percentage and got my result
 
+| Before | After |
+| --- | --- |
+| ![OVA](https://user-images.githubusercontent.com/63916057/225574375-11dfc2ef-26b1-4ab2-b887-c2b598269368.JPG) | ![OVA cleaned](https://user-images.githubusercontent.com/63916057/225575478-9d455284-f52c-4c3c-bf40-00c92668c00b.JPG) |
 
 
 ### POT
@@ -42,6 +48,11 @@ Same requirement as the OVA and I also applied the same process to achieve my re
 ### Club
 I noticed some data in this column contained nonprintable characters for club and also using the filter I also noticed some blank spaces. Firstly, I sorted out all blanks and filled them up with “no club”. Then in solving the rows with nonprintable characters I used the CLEAN() function.
 
+| Before | After |
+| --- | --- |
+| ![club](https://user-images.githubusercontent.com/63916057/225576710-29bb7317-40aa-468e-8769-14bece2b4d3e.JPG) | ![club cleaned](https://user-images.githubusercontent.com/63916057/225576870-fdd90299-ed90-4346-a239-a66e8ec3082e.JPG) |
+
+
 ### Contract
 Here, I simply used the text to columns command on the data tab to split this column into “contract_start” and “contract_end” using  “-” as the delimiter.
 
@@ -49,8 +60,13 @@ Here, I simply used the text to columns command on the data tab to split this co
 
 From the provided data dictionary for the challenge, we were required to present the unit of this column as feet and inches. In achieving this, the first thing I did was to use the filter feature of excel to filter this column and got to see mixed units of cm and feet-inches. Solving this and unifying the unit to that needed, I first inserted another column to the right to convert all unit in cm to feet using the formula =IFERROR(CONVERT(LEFT(N2,LEN(N2)-2),"cm","ft"),N2). Then created another column to convert the feet into ft’inches by using the formula =IFERROR(INT(P3)+(12*MOD(P3,1)>=11.5)&"'"&IF(12*MOD(P3,1)>=11.5,0,ROUND(12*MOD(P3,1),0))&"""",N3)
 
+| Before | After |
+| --- | --- |
+| ![Height](https://user-images.githubusercontent.com/63916057/225580314-3bb24ccd-52a0-4795-8e81-c75e2b0baa8f.JPG) | ![height cleaned](https://user-images.githubusercontent.com/63916057/225578318-9c52aec3-bf8e-4d62-809a-6b086ac198a6.JPG) |
+
 ### BOV
 Same requirement as the OVA and POT. I also applied the same process as shown for OVA above to achieve my results for it.
+
 
 ### Loan Date End
 Here I filtered all blanks and replaced them with “not specified” values since none were specified for such players.
