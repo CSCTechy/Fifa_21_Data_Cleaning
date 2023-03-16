@@ -24,7 +24,7 @@ Before I began the cleaning process after loading the dataset, the following col
 
  ![Identified dirtydata](https://user-images.githubusercontent.com/63916057/225563068-c0f84644-07e9-45d3-97bc-812b476e62bd.JPG)                                                  
 | ------------------------------------------------------------------------------------------------------------------  |
-> ######                                             Identified dirty data
+######                                             Identified dirty data
 ### LongName
 Cleaning this, I used the filter to look through the names and having identified some names were abbreviated here, I filtered those names and ensured they were fully spelt. Then I inserted an column to the right and applied the TRIM() function to remove any leading whitepace available in the name column that might cause issues later on and then copied and paste as values to get rid of the function.
 
@@ -33,6 +33,8 @@ Here there wasn’t much to clean but all I did was to apply the TRIM function j
 
 ### OVA
 From the provided data dictionary for the challenge, we were required to format the data type of this column as percentage. In achieving this, I inserted a new column to the right and typed 100 into the first cell and copied it, after which I moved to the original column, highlighted all the rows using Ctrl + Shift + Down-arrow, the right clicked to paste special and clicked divide. After doing so I finally changed the datatype to percentage and got my result
+
+
 
 ### POT
 Same requirement as the OVA and I also applied the same process to achieve my results too.
