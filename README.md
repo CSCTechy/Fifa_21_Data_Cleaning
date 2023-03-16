@@ -21,7 +21,7 @@ The goal of the data cleaning project on the fifa '21 dataset is to ensure the d
 
 ### DATA CLEANING PROCESS
 
-Before I began the cleaning process after loading the dataset, the following columns were marked for cleaning; Longname ,Nationality , OVA , POT , Club , Contract , Height , Weight , BOV , Loan End date , Value, wage , release clause , W/F , SM , IR , and Hits.
+Before I began the cleaning process after loading the dataset, the following columns were marked for cleaning; Longname ,Nationality , OVA , POT , Club , Contract , Height , Weight , BOV , Loan End date , Value, wage , release clause , W/F , SM , IR , and Hits. Amongst these columns, **Data manipulation** was carried out on them to make them more organised and allow for easy reading.
 
 | Before | After |
 | --- | --- |
