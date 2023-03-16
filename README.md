@@ -31,14 +31,14 @@ Before I began the cleaning process after loading the dataset, the following col
 > Note: Some columns were hidden for screenshot purpose so as to capture those worked on for display in this documentation.
                                                    
 ### LongName
-Cleaning this, I used the filter to look through the names and having identified some names were abbreviated here, I filtered those names and ensured they were fully spelt. Then I inserted an column to the right and applied the TRIM() function to remove any leading whitepace available in the name column that might cause issues later on and then copied and paste as values to get rid of the function.
+Cleaning this, I used the filter to look through the names and having identified some names were abbreviated here, I filtered those names and ensured they were fully spelt. Then I inserted a new column to the right and applied the TRIM() function to remove any leading whitepace available in the name column that might cause issues later on and then copied and paste as values to get rid of the function.
 
 
 ### Nationality
 Here there wasn’t much to clean but all I did was to apply the TRIM() function so as to get rid of any whitespace that might possibly exist in any of the rows.
 
 ### OVA
-From the provided data dictionary for the challenge, we were required to format the data type of this column as percentage. In achieving this, I inserted a new column to the right and typed 100 into the first cell and copied it, after which I moved to the original column, highlighted all the rows using Ctrl + Shift + Down-arrow, the right clicked to paste special and clicked divide. After doing so I finally changed the datatype to percentage and got my result.
+From the provided data dictionary for the challenge, we were required to format the data type of this column as percentage. In achieving this, I inserted a new column to then right and typed 100 into the first cell and copied it, after which I moved to the original column, highlighted all the rows using Ctrl + Shift + Down-arrow, the right clicked to paste special and clicked divide. After doing so I finally changed the datatype to percentage and got my result.
 
 | Before | After |
 | --- | --- |
@@ -104,17 +104,17 @@ Here I filtered all blanks and replaced them with zeros. And then applied the =T
 ##  Summary / Techniques Used
 #### Methods used:
 -   &
--   IF
--   LEN
--   INT
--   MOD
--   TRIM
--   CLEAN
--   VALUE
--   ROUND
--   REPLACE
--   IFERROR
--   LEFT,RIGHT
+-   IF()
+-   LEN()
+-   INT()
+-   MOD()
+-   TRIM()
+-   CLEAN()
+-   VALUE()
+-   ROUND()
+-   REPLACE()
+-   IFERROR()
+-   LEFT,RIGHT()
 -   Filters
 -   Find and replace
 -   Copy-Paste Values
