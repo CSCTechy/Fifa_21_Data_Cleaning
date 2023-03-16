@@ -1,4 +1,6 @@
-# Fifa_21_Data_Cleaning
+# FIFA_21_DATA_CLEANING_USING_MS_EXCEL
+![image](https://user-images.githubusercontent.com/63916057/225592439-fcbaee5a-3a27-4073-84b8-05b8e1497e9e.png)
+
 Data cleaning ensures integrity and obtaining accurate results
 
 
